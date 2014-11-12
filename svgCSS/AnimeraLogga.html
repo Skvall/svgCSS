@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #logga {
+            width: 1200px;
+            position: relative;
+            border: 10px solid red;
+            transition: width 2s, height 2s, transform 2s;
+            animation-name: myfirst;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        #logga:hover {
+
+                transform: rotate(360deg);
+            }
+
+        #hoverMe{
+            font-size: 22px;
+            border: 2px solid black;
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            left: 400px;
+            top: 100px;
+        }
+
+        @keyframes myfirst {
+            0% {
+                border-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                border-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                border-color: green;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                border-color: purple;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                border-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="logga">        
+        <img src="images/reddit_logo.jpg" />  
+        <div id="hoverMe">Hover me!</div>
+    </div>
+
+</body>
+</html>
